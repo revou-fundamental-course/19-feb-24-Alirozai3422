@@ -1,0 +1,115 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #f0f0f0;
+  }
+  .main{
+    margin: 153px 290px 0 200px;
+    
+  }
+  
+  .cat {
+    margin-top: 30%;
+    margin-left: 10%;
+  }
+  .navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation li {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+  }
+  
+  .navigation li:hover {
+    color: #333;
+  }
+  
+  
+  .our-office {
+    padding: 5% 0;
+    width: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin: 0;
+    margin-left: 160px;
+  }
+  
+  .circle-image {
+    width: 180px;
+    height: 180px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    width: 500px;
+    margin: 20px auto;
+    float: left;
+    margin-left: 10%;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-bottom: 5px;
+  }
+  
+  form input, textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  form .jenis-kelamin {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  form .jenis-kelamin label {
+    margin-right: 10px;
+  }
+  
+  form button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+    }
+  }
+  
+  .output {
+    border: 2px solid rgb(156, 52, 52);
+    width: 100%;
+    min-height: 100px;
+    float: left;
+    margin-right: 20px;
+  }
+  

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Company Profile</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header>
+    <img src="./assets/Anime.png" alt="Company Logo" style="width: 5%; border-radius: 50%;">
+    <ul class="navigation">
+      <li>Home</li>
+      <li>Our Profile</li>
+      <li>Portfolio</li>
+      <li>Contact Us</li>
+    </ul>
+</header>
+<div class="main">
+    <h1>Hi Ali, Welcome To Website</h1>
+    <p>Ini Adalah Website Pertamaku</p>
+</div>
+<div class="cat">
+<h1>Our Headquarter</h1>
+</div>
+  <div class="our-office">
+    <div>
+      <div class="circle-image" style="background-image: url(./assets/Anime.png);"></div>
+      <h5>Jakarta</h5>
+    </div>
+    <div>
+      <div class="circle-image"></div>
+      <h5>Bandung</h5>
+    </div>
+    <div>
+      <div class="circle-image"></div>
+      <h5>Surabaya</h5>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Message Us</h1>
+    <form action="#">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+      <label for="tanggal">Tanggal Lahir:</label>
+      <input type="date" id="tanggal" name="tanggal">
+      <label for="jenis_kelamin">Jenis Kelamin:</label>
+      <div class="jenis-kelamin">
+        <label for="laki-laki">
+          <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki" checked> Laki-laki
+        </label>
+        <label for="perempuan">
+          <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan"> Perempuan
+        </label>
+      </div>
+      <label for="pesan">Pesan:</label>
+      <textarea id="pesan" name="pesan" rows="5"></textarea>
+      <button type="submit">Kirim</button>
+      <div class="output"></div>
+    </form>
+  </div>
+  
+
+</body>
+</html>
+
+
