@@ -106,10 +106,15 @@ body {
   }
   
   .output {
-    border: 2px solid rgb(156, 52, 52);
-    width: 100%;
-    min-height: 100px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border: 2px solid rgb(112, 106, 106);
+    height: 200px;
+    width: 40%;
     float: left;
-    margin-right: 20px;
-  }
+    }
+  
+    
+  
   
