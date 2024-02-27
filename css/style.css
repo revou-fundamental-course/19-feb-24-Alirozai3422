@@ -1,120 +1,156 @@
-body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 100px;
-    background-color: #f0f0f0;
-  }
-  .main{
-    margin: 153px 290px 0 200px;
-    
-  }
-  
-  .cat {
-    margin-top: 30%;
-    margin-left: 10%;
-  }
-  .navigation {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navigation li {
-    display: inline-block;
-    margin-right: 20px;
-    font-weight: bold;
-  }
-  
-  .navigation li:hover {
-    color: #333;
-  }
-  
-  
-  .our-office {
-    padding: 5% 0;
-    width: 50%;
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    margin: 0;
-    margin-left: 160px;
-  }
-  
-  .circle-image {
-    width: 180px;
-    height: 180px;
-    border: 2px solid black;
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .container {
-    width: 500px;
-    margin: 20px auto;
-    float: left;
-    margin-left: 10%;
-  }
-  
-  h1 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  form label {
-    margin-bottom: 5px;
-  }
-  
-  form input, textarea {
-    padding: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  form .jenis-kelamin {
-    display: flex;
-    margin-bottom: 10px;
-  }
-  
-  form .jenis-kelamin label {
-    margin-right: 10px;
-  }
-  
-  form button {
-    margin-top: 10px;
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-  }
-  
-  @media (max-width: 768px) {
-    .container {
-      width: 100%;
-    }
-  }
-  
-  .output {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    border: 2px solid rgb(112, 106, 106);
-    height: 200px;
-    width: 40%;
-    float: left;
-    }
-  
-    
-  
-  
+*{
+  font-family: monospace;
+}
+.container {
+  padding: 10px;
+  border-block: 1px solid;
+  writing-mode: horizontal-tb;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+
+header{
+  padding-left: 80px;
+}
+.home, .op, .pf, .mu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10pt;
+  width:8em;
+  height:3em;
+  text-align: center;
+}
+
+.logo {
+  padding-left: 10pt;
+  margin-right: auto;    
+}
+
+.content1 {
+  flex-direction: column; 
+  display: flex;
+  width: 1366;
+  height: 578px;                
+}
+.content1 > div1 {
+  display: flex; 
+  border-bottom: 1px solid black;
+  flex: 2; 
+  align-items: center; 
+  justify-content: center;
+  font-size: 10pt;
+  text-align: center;
+}
+
+.content1 > div2 {
+  display: flex; 
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  flex: 2; 
+  align-items: left; 
+  font-size: 10pt;
+  text-align: left;
+}
+.content1 > div2 table {
+  padding-left: 80px;
+  text-align: center;
+}
+.content1 div2 table td {
+  padding-left: 80px;
+  text-align: center;
+}
+.lingkaran1 {   
+  background-image: url(../assets/tim1.jpg);
+  width: 120px;
+  height: 120px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.lingkaran2{
+  background-image: url(../assets/tim2.jpg);
+  width: 120px;
+  height: 120px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.lingkaran3{
+  background-image: url(../assets/tim3.jpg);
+  width: 120px;
+  height: 120px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content2 {
+  padding-left: 80px;
+  padding-bottom: 30px;
+  flex-direction: row; 
+  display: flex;
+}
+.content2 > div {
+  display: flex; 
+  border: 1pt solid white;
+  flex: 1; 
+  align-content: left; 
+  justify-content: left;
+}
+form {
+  flex-direction: row; display: flex;
+} 
+form > table {
+   display: flex; 
+   flex: 1; 
+   align-content: right; 
+   justify-content: right;
+}
+.nama {
+   height:25px;
+   width:300px;
+}
+.date {
+   height:25px;
+   width:303px;
+}
+.textarea {
+   height: 90px;
+   width: 305px;
+}
+.tombol {
+  height:25px;
+  width:425px;
+}
+.content2 > div2 {
+  display: flex;
+  flex: 1;
+  padding-top: 80px;
+  padding-left: 20px;
+  padding-right: 90px;
+  border: 1px solid white;
+}
+
+.border {
+  padding: 20px;
+  width: 500px;
+  height: 200px;
+  border: 1px solid black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: top;
+}
+footer {
+  border-top: 1px solid black;
+  padding-right: 60px;
+}    
+footer > p {
+  text-align: end;
+}

@@ -1,66 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Company Profile</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  <header>
-    <img src="./assets/Anime.png" alt="Company Logo" style="width: 5%; border-radius: 50%;">
-    <ul class="navigation">
-      <li>Home</li>
-      <li>Our Profile</li>
-      <li>Portfolio</li>
-      <li>Contact Us</li>
-    </ul>
-</header>
-<div class="main">
-    <h1>Hi Ali, Welcome To Website</h1>
-    <p>Ini Adalah Website Pertamaku</p>
-</div>
-<div class="cat">
-<h1>Our Headquarter</h1>
-</div>
-  <div class="our-office">
-    <div>
-      <div class="circle-image" style="background-image: url(./assets/Anime.png);"></div>
-      <h5>Jakarta</h5>
-    </div>
-    <div>
-      <div class="circle-image"></div>
-      <h5>Bandung</h5>
-    </div>
-    <div>
-      <div class="circle-image"></div>
-      <h5>Surabaya</h5>
-    </div>
-  </div>
+<html>
+    <head>
+        <title>My Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="container">
+            <img 
+            src="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/a32f81155cd0d4f16d36aef74f7d2644.png" 
+            class="logo" width="45" height="45" />
+            <div><button class="home"><a href="#">Home</a></button></div>
+            <div><button class="op"><a href="#">Our Profil</a></button></div>
+            <div><button class="pf"><a href="#">Portofolio</a></button></div>
+            <div><button class="mu"><a href="#">Message Us</a></button></div>
+        </nav>
 
-  <div class="container">
-    <h1>Message Us</h1>
-    <form action="#">
-      <label for="nama">Nama:</label>
-      <input type="text" id="nama" name="nama" required>
-      <label for="tanggal">Tanggal Lahir:</label>
-      <input type="date" id="tanggal" name="tanggal">
-      <label for="jenis_kelamin">Jenis Kelamin:</label>
-      <div class="jenis-kelamin">
-        <label for="laki-laki">
-          <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki" checked> Laki-laki
-        </label>
-        <label for="perempuan">
-          <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan"> Perempuan
-        </label>
-      </div>
-      <label for="pesan">Pesan:</label>
-      <textarea id="pesan" name="pesan" rows="5"></textarea>
-      <button type="submit">Kirim</button>
-    </form>
-  </div>
-  <div class="output"></div>
-</body>
+    <body>
+        <header>
+            <h2>Hello everyone <span id="name"></span>, Welcome To Website</h2>
+            <p>Ini adalah website latihan pertamaku</p>
+        </header>
+        <main class="content1">
+            <div1>
+                1366x578
+            </div1>
+            
+            <div2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th><h2>Our Headquarter</h2></th>
+                        </tr>
+                        <tr>                          
+                            <td colspan="3"><div class="lingkaran1"></div>Jakarta</td>                         
+                            <td colspan="3"><div class="lingkaran2"></div>Bandung</td>
+                            <td colspan="3"><div class="lingkaran3"></div>Surabaya</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div2>    
+        </main>
+        <main class="content2">
+            <div>
+                 <form name="message-form" onsubmit="validateForm(); return false">
+                    <table class="table">
+                        <tr>
+                            <th colspan="3" align="left">
+                            <h2>Message Us</h2>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Nama</label>
+                            </td>
+                            <td>:</td>
+                            <td>
+                                <input type="text" id="fname" name="full-name" placeholder="Nama" class="nama" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="fdate">Tanggal Lahir</label>
+                            </td>
+                            <td>:</td>
+                            <td>
+                                <input type="date" id="ttl" name="birth-date" class="date" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="fjk">Jenis Kelamin</label>
+                            </td>
+                            <td>:</td>
+                            <td>
+                                <input type="radio" id="laki" name="gender" value="Laki Laki"> 
+                                <label for="laki">Laki Laki</label> 
+                                <input type="radio" id="perempuan" name="gender" value="Perempuan"> 
+                                <label for="perempuan">Perempuan</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="fpesan">Pesan</label>
+                            </td>
+                            <td>:</td>
+                            <td>
+                                <textarea id="fpesan" name="messages" placeholder="Pesan" class="textarea" required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"> 
+                                <input type="submit" id="submit-button" value="Submit" class="tombol">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <div2>                
+                <table class="border">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label><b>Current Time : </b></label>                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label><b>Nama : </b><span id="sender-full-name"></span></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label><b>Tanggal Lahir : </b><span id="sender-birth-date"></span></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label><b>Jenis Kelamin : </b><span id="sender-gender"></span></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label><b>Pesan : </b><span id="sender-messages"></span></label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>              
+            </div2>            
+        </main>
+        <footer>
+            <p>Created By RevoU</p>
+        </footer>
+        <script src="../19-feb-24-Alirozai3422/js/script.js"></script>
+        <!-- <script>
+            let visitorName = prompt("Masukkan nama Anda dibawah!");
+            document.getElementById("name").innerText = visitorName;
+        </script> -->
+    </body>
 </html>
-
-
